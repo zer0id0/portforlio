@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/passport.png");
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a;
       opacity: 1; }
@@ -258,8 +258,9 @@ main {
     float: none;
     width: 100%;
     min-height: 0; }
-  .show {
-    transform: translate3d(0, 0, 0); }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -268,7 +269,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/passport_small.png");
+      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
@@ -278,9 +279,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main #home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; }
-  h2.sm-heading {
-    display: none; } }
+    grid-template-columns: 1fr; } }
